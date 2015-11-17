@@ -16,7 +16,7 @@ def delbadword(chan, text):
     open(os.path.join("badwords/" + chan + ".txt"), "wr" )
 
 @hook.command("badwordlist", "bwl", permissions=["badwords"])
-def badwordlist(chan, text):
+def badwordlist(notice, chan, text):
         open(os.path.join("badwords/" + chan + ".txt"), "r" )
 
 @hook.regex()
